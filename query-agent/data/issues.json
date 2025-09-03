@@ -1,0 +1,58 @@
+{
+  "Risk_Class_Check_DS": {
+    "explanation": "Customer excluded from loan limit as they were classified as high risk after a risk assessment on lending/default history. System automatically flags customers with poor repayment behavior or high default probability.",
+    "resolution": "No immediate action available. Customer should maintain good banking behavior and wait for next monthly risk assessment review. Advise customer of high-risk classification."
+  },
+  "DPD_Arrears_Check_DS": {
+    "explanation": "Customer has active arrears with account overdrawn for more than the acceptable period (3 days for digital loans, 9 days for mobile loans). System automatically blocks new lending until arrears are cleared.",
+    "resolution": "Customer must clear all outstanding arrears first. After clearance, they must wait for a two-month cooling period before limit review. Advise customer of cooling period requirement."
+  },
+  "inconsistent_CTOs": {
+    "explanation": "Customer excluded from loan limit due to inconsistent credit turnovers (CTOs). The system detects irregular or unpredictable banking transaction patterns that don't meet lending criteria for consistent income flow.",
+    "resolution": "Advise customer to maintain consistent banking activity and regular income deposits for at least 2-3 months. Encourage steady transaction patterns to improve CTO consistency."
+  },
+  "insufficient_CTOs": {
+    "explanation": "Customer has insufficient credit turnover history. The account lacks adequate transaction volume or frequency to establish a reliable lending assessment pattern.",
+    "resolution": "Customer needs to increase banking activity and maintain regular transactions. Minimum transaction threshold must be met before loan eligibility review."
+  },
+  "Elma_check": {
+    "explanation": "Customer is not enrolled in mobile banking platform (ELMA/Sasa), which is required for digital loan applications, disbursement, and management. System requires mobile banking access for loan processing.",
+    "resolution": "Customer must register for mobile banking (ELMA/Sasa) through branch visit or digital onboarding process. Provide mobile banking registration assistance and training."
+  },
+  "Joint_Check": {
+    "explanation": "Customer's account is set up as a joint account, which doesn't meet the single-account holder requirement for digital personal loans. System requires individual account ownership for loan processing.",
+    "resolution": "Customer needs to open an individual account for loan eligibility, or convert joint account to individual ownership if permissible under bank policy."
+  },
+  "Mandates_Check": {
+    "explanation": "Customer's account mandates are not set as 'SOLE SIGNATORY.' Digital loans require single mandate authority to ensure clear repayment responsibility and legal compliance.",
+    "resolution": "Update account mandates to SOLE SIGNATORY through branch or relationship manager. Customer must have exclusive signing authority on the account."
+  },
+  "Active_Inactive_Check": {
+    "explanation": "Customer's account is classified as inactive due to insufficient recent banking activity or dormant status. System requires active account status for loan eligibility.",
+    "resolution": "Customer must reactivate account through regular transactions and banking activity. Contact branch to update account status if needed. Maintain consistent activity for 30+ days."
+  },
+  "Classification_Check": {
+    "explanation": "Customer's account classification is below acceptable lending criteria (e.g., B12 or lower). Only customers with A5 classification or higher are eligible for digital loans.",
+    "resolution": "Liaise with Relationship Manager (RM) to review and update customer classification to A5 or higher. Customer may need to provide additional documentation or meet upgraded account requirements."
+  },
+  "Linked_Base_Check": {
+    "explanation": "There are issues with the customer's linked account setup or base account configuration. This could involve problems with account linking, incorrect base account designation, or technical setup issues.",
+    "resolution": "Investigate account linking configuration. Contact Account Maintenance to resolve base account issues and ensure proper account hierarchy setup."
+  },
+  "Scheme_Check_DS": {
+    "explanation": "Customer's existing loan has been moved or transferred to another bank through a scheme arrangement. System blocks new lending until scheme status is resolved or completed.",
+    "resolution": "No immediate action available. Customer must complete existing scheme obligations with other bank before being eligible for new loans. Monitor scheme completion status."
+  },
+  "EMI_higher_than_proxy_income": {
+    "explanation": "The requested loan's Equated Monthly Installment (EMI) exceeds the customer's estimated proxy income based on banking transaction analysis. This violates affordability assessment criteria.",
+    "resolution": "Customer should either request a lower loan amount to reduce EMI, or work to increase verifiable income through consistent deposits. Consider providing income documentation for manual review."
+  },
+  "customer_vintage_Check": {
+    "explanation": "Customer relationship with the bank is less than 6 months old. System requires established banking history of at least 6 months to assess creditworthiness and banking patterns effectively.",
+    "resolution": "Customer must wait until they have completed 6 months of active banking relationship. Encourage consistent banking activity during waiting period to build good profile."
+  },
+  "KRAPIN_Check": {
+    "explanation": "Customer's KRA PIN (Kenya Revenue Authority Personal Identification Number) is missing or invalid in the system. This is required for tax compliance and loan processing in Kenya.",
+    "resolution": "Customer must provide valid KRA PIN to branch or update through mobile banking platform. PIN verification is mandatory for loan processing compliance."
+  }
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Bot</title>
+</head>
+<body>
+    <h1>Loan Resolution Bot</h1>
+    <form method="POST">
+        <label>Ask a query:</label>
+        <input type="text" name="query" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if response %}
+        <h2>Bot Response:</h2>
+        <pre>{{ response }}</pre>
+    {% endif %}
+</body>
+</html>
